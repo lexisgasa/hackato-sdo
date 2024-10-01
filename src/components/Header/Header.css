@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+.header__icon {
+  font-size: 35px;
+}
