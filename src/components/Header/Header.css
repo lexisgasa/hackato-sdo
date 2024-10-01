@@ -1,10 +1,14 @@
-.header {
+.heading {
   display: flex;
   align-items: center;
   gap: 5px;
-  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.header__icon {
+.heading__icon {
   font-size: 35px;
+}
+
+.heading__title {
+  text-transform: uppercase;
 }
