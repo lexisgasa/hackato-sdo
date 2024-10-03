@@ -1,6 +1,6 @@
 .activityCard-mainContainer {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 180px;
 }
 
 .activityCard-container {
@@ -21,6 +21,7 @@
 .activityCard-container__title {
   text-transform: uppercase;
   font-size: 1.1rem;
+  margin-bottom: 36px;
 }
 
 .activityCard-container__button {

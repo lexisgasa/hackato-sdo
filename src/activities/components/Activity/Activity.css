@@ -1,0 +1,12 @@
+.activity__heading {
+  margin-bottom: 18px;
+}
+
+.activity__text {
+  text-align: center;
+  width: 200px;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
