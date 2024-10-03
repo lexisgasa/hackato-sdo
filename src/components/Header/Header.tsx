@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = (): React.ReactElement => {
   return (
-    <header>
+    <header className="header">
       <div className="heading">
         <BiSolidPlanet className="heading__icon" />
         <h1 className="heading__title">Boored</h1>

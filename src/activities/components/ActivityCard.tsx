@@ -2,7 +2,7 @@ import "./ActivityCard.test.css";
 
 const ActivityCard = (): React.ReactElement => {
   return (
-    <>
+    <div className="activityCard-mainContainer">
       <img
         src="/oyster.webp"
         alt="imatge d'una ostra de dibuixos feliç"
@@ -15,7 +15,7 @@ const ActivityCard = (): React.ReactElement => {
         </h2>
         <button className="activityCard-container__button">Generar</button>
       </div>
-    </>
+    </div>
   );
 };
 
