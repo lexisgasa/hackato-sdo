@@ -14,7 +14,9 @@ body {
   margin: 0;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -39,4 +41,8 @@ a {
   text-decoration: none;
   padding: 5px 15px;
   cursor: pointer;
+}
+
+p {
+  margin: 0;
 }

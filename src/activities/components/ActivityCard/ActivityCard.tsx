@@ -1,4 +1,4 @@
-import "./ActivityCard.test.css";
+import "./ActivityCard.css";
 
 const ActivityCard = (): React.ReactElement => {
   return (
