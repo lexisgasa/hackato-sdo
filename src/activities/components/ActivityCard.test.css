@@ -1,0 +1,25 @@
+.activityCard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  border-radius: 50% / 10%;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  top: 36%;
+  z-index: -1;
+}
+
+.activityCard-container__title {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.activityCard-container__button {
+  background-color: #000;
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
