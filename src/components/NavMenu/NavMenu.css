@@ -1,23 +1,21 @@
 .navigation-menu {
   display: flex;
   gap: 10px;
-  font-size: 0.5rem;
-  height: 40px;
-  flex-wrap: wrap;
+  font-size: 0.6rem;
 
-  @media (width >= 380px) {
-    font-size: 0.8rem;
+  @media (width >= 390px) {
+    font-size: 0.9rem;
   }
 }
 
-.navigation-menu__button {
+.navigation-menu__link {
   background-color: var(--gray);
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.navigation-menu__button--active {
+.navigation-menu__link--active {
   color: var(--white);
   background-color: var(--active);
 }
