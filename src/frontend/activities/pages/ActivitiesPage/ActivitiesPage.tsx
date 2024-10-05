@@ -6,35 +6,33 @@ import { useEffect } from "react";
 
 const ActivityPage = (): React.ReactElement => {
   const { category } = useParams<{ category: string }>();
-  const { activities, loadActivity } = useActivitiesStore();
+  const { activity, loadActivity } = useActivitiesStore();
 
   useEffect(() => {
-    const fetchActivities = async () => {
+    const fetchActivity = async () => {
       try {
         const apiResponse = await fetch(
           `http://localhost:3000/activities/${category}`
         );
 
         if (!apiResponse.ok) {
-          throw new Error("Error fetching activities");
+          throw new Error("Error fetching activity");
         }
 
-        const activitiesApiResponse = await apiResponse.json();
+        const activityApiResponse = await apiResponse.json();
 
-        loadActivity(activitiesApiResponse);
+        loadActivity(activityApiResponse);
       } catch (error) {
         console.log(error);
       }
     };
-    fetchActivities();
+    fetchActivity();
   }, [category, loadActivity]);
-
-  console.log(activities);
 
   return (
     <>
       <ActivityCard />
-      <Activity />
+      {activity && <Activity activity={activity} />}{" "}
     </>
   );
 };
