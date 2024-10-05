@@ -1,3 +1,3 @@
-export interface Activity {
+export interface ActivityData {
   activity: string;
 }
