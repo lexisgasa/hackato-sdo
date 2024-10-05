@@ -7,10 +7,11 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false,
+    "outDir": "./dist/backend",
+    "rootDir": "./src/backend",
 
     /* Linting */
     "strict": true,
@@ -18,5 +19,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["src/backend/**/*.ts"]
 }
