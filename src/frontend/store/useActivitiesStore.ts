@@ -2,16 +2,15 @@ import { create } from "zustand";
 import { ActivityData } from "../activities/types";
 
 interface StoreStructure {
-  activities: ActivityData[];
-  loadActivity: (activities: ActivityData[]) => void;
+  activity: ActivityData | null;
+  loadActivity: (activity: ActivityData) => void;
 }
 
 const useActivitiesStore = create<StoreStructure>((set) => ({
-  activities: [],
-  loadActivity: (activities: ActivityData[]) => {
-    set((state) => ({
-      ...state,
-      activities,
+  activity: null,
+  loadActivity: (activity: ActivityData) => {
+    set(() => ({
+      activity,
     }));
   },
 }));
