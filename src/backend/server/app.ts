@@ -8,12 +8,21 @@ const app = express();
 app.use(morgan("dev"));
 app.use(cors());
 
-const category = "";
+const categoryMapping: { [key: string]: string } = {
+  cuinar: "cooking",
+  social: "social",
+  educacio: "education",
+  caritat: "charity",
+};
 
-app.use(category, async (_req, res) => {
+app.use("/activities/:category", async (req, res) => {
+  const { category } = req.params;
+
+  const mappedCategory = categoryMapping[category];
+
   try {
     const response = await axios.get(
-      `https://bored-api.appbrewery.com/filter?type=${category}`
+      `https://bored-api.appbrewery.com/filter?type=${mappedCategory}`
     );
 
     const activities = response.data;

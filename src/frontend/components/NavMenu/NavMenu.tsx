@@ -5,7 +5,7 @@ const NavMenu = (): React.ReactElement => {
   return (
     <nav className="navigation-menu">
       <NavLink
-        to={"/social"}
+        to={"/activities/social"}
         className={({ isActive }) =>
           `navigation-menu__link ${
             isActive ? "navigation-menu__link--active" : ""
@@ -15,7 +15,7 @@ const NavMenu = (): React.ReactElement => {
         Social
       </NavLink>
       <NavLink
-        to={"/educacio"}
+        to={"/activities/educacio"}
         className={({ isActive }) =>
           `navigation-menu__link ${
             isActive ? "navigation-menu__link--active" : ""
@@ -25,7 +25,7 @@ const NavMenu = (): React.ReactElement => {
         Educació
       </NavLink>
       <NavLink
-        to={"/caritat"}
+        to={"/activities/caritat"}
         className={({ isActive }) =>
           `navigation-menu__link ${
             isActive ? "navigation-menu__link--active" : ""
@@ -35,7 +35,7 @@ const NavMenu = (): React.ReactElement => {
         Caritat
       </NavLink>
       <NavLink
-        to={"/cuinar"}
+        to={"/activities/cuinar"}
         className={({ isActive }) =>
           `navigation-menu__link ${
             isActive ? "navigation-menu__link--active" : ""
