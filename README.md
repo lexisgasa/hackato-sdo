@@ -15,7 +15,7 @@ L'aplicació consumeix dades de l'API [Bored API](https://bored-api.appbrewery.c
 
 Podeu accedir a una demo de l'aplicació des del següent enllaç:
 
-- [Demo en viu](https://hackato-sdo.netlify.app/activities/social)
+- [Demo en viu](https://hackato-sdo.netlify.app/)
 
 ## Pila tecnològica utilitzada
 
