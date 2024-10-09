@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Prova Frontend Hackató Saló Ocupació
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripció del projecte
 
-Currently, two official plugins are available:
+Aquest projecte consisteix en el desenvolupament d'una aplicació web que mostra activitats per realitzar en moments d'avorriment.
+L'aplicació consumeix dades de l'API [Bored API](https://bored-api.appbrewery.com/) i presenta una interfície amigable i responsive, dissenyada per ser atractiva tant en dispositius mòbils com d'escriptori.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisits tècnics
 
-## Expanding the ESLint configuration
+- **Connexió a l'API**: Les dades de les activitats es carreguen mitjançant l'API de Bored API.
+- **Estil i disseny**: S'ha utilitzat CSS per crear una interfície atractiva, seguint les referències visuals proporcionades, tot i que no m'hi vaig fixar en que tant el logo com l'imatge eren proporcionades pel que vaig utilizar un component de la llibreria [React Icons](https://react-icons.github.io/react-icons/) i vaig generar una imatge d'una ostra amb intel·ligencia artificial.
+- **Responsive**: L'aplicació ha sigut creada seguint el patró mobile-first, és totalment responsiva i optimitzada per funcionar en dispositius mòbils i d'escriptori.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Demo
 
-- Configure the top-level `parserOptions` property like this:
+Podeu accedir a una demo de l'aplicació des del següent enllaç:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [Demo en viu](https://hackato-sdo.netlify.app/activities/social)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Pila tecnològica utilitzada
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Framework**: React
+- **Empaquetador**: Vite
+- **Estat global**: Zustand
+- **Proves**: Vitest
+- **Servidor web**: Express.js (per al proxy del backend)
+- **Llenguatge**: TypeScript
+- **Estil**: CSS
+- **Desplegament**: Netlify (frontend) i Render (backend)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Instal·lació i execució del projecte
+
+Per executar aquest projecte localment, clona el repositori, instal·la les dependencies, buildeja el servidor del back amb `npm run build-back` i posa'l a escoltar amb `npm run back-start`. Pots provar el projecte o bé localmente amb el comand `npm run dev` o `npm run build` + `npm run preview`, o a l'enllaç de netlify.
