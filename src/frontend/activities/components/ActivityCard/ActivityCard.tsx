@@ -1,9 +1,23 @@
 import "./ActivityCard.css";
 
-const ActivityCard = (): React.ReactElement => {
+interface ActivityCardProps {
+  fetchActivity: (category: string) => void;
+  category: string | undefined;
+}
+
+const ActivityCard = ({
+  fetchActivity,
+  category,
+}: ActivityCardProps): React.ReactElement => {
+  const handleGenerateActivity = () => {
+    if (category) {
+      fetchActivity(category);
+    }
+  };
   return (
     <div className="activityCard-mainContainer">
       <img
+        className="activityCard-image"
         src="/oyster.webp"
         alt="imatge d'una ostra de dibuixos feliç"
         width={200}
@@ -13,7 +27,12 @@ const ActivityCard = (): React.ReactElement => {
         <h2 className="activityCard-container__title">
           Troba alguna cosa a fer
         </h2>
-        <button className="activityCard-container__button">Generar</button>
+        <button
+          className="activityCard-container__button"
+          onClick={handleGenerateActivity}
+        >
+          Generar
+        </button>
       </div>
     </div>
   );
