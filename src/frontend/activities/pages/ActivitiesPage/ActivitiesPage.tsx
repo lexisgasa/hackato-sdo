@@ -3,6 +3,7 @@ import ActivityCard from "../../components/ActivityCard/ActivityCard";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useFetchActivity from "../../../hooks/useActivity/useActivity";
+import "./ActivitiesPage.css";
 
 const ActivityPage = (): React.ReactElement => {
   const { category } = useParams<{ category: string }>();
@@ -16,10 +17,11 @@ const ActivityPage = (): React.ReactElement => {
   }, [category, loadActivity]);
 
   return (
-    <>
+    <div className="page-container">
       <ActivityCard fetchActivity={loadActivity} category={category} />
+      <div className="border"></div>
       {activity && <Activity activity={activity} />}{" "}
-    </>
+    </div>
   );
 };
 
