@@ -1,5 +1,6 @@
 .activity__heading {
   margin-bottom: 18px;
+  text-align: center;
 }
 
 .activity__text {
@@ -9,4 +10,8 @@
   &::first-letter {
     text-transform: capitalize;
   }
+}
+
+.activity {
+  margin-left: 20px;
 }

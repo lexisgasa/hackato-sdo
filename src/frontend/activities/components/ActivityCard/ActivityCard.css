@@ -24,8 +24,14 @@
 }
 
 .activityCard-container__button {
+  position: relative;
   background-color: #000;
   color: var(--white);
   border-radius: 8px;
   font-size: 0.9rem;
+}
+
+.activityCard-image {
+  position: relative;
+  z-index: 1;
 }
