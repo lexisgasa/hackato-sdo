@@ -7,7 +7,9 @@ describe("Given the component ActivityCard", () => {
       const activityCardImageAlternativeText =
         /imatge d'una ostra de dibuixos feliç/i;
 
-      render(<ActivityCard />);
+      render(
+        <ActivityCard fetchActivity={vi.fn().mockReturnThis()} category="" />
+      );
 
       const activityCardImage = screen.getByRole("img", {
         name: activityCardImageAlternativeText,
@@ -19,7 +21,9 @@ describe("Given the component ActivityCard", () => {
     test("Then it should show 'Troba alguna cosa a fer' inside a heading", () => {
       const activityCardHeadingText = /troba alguna cosa a fer/i;
 
-      render(<ActivityCard />);
+      render(
+        <ActivityCard fetchActivity={vi.fn().mockReturnThis()} category="" />
+      );
 
       const activityCardHeading = screen.getByRole("heading", {
         name: activityCardHeadingText,
