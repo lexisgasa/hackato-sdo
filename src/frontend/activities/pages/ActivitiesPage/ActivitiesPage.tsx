@@ -20,7 +20,13 @@ const ActivityPage = (): React.ReactElement => {
     <div className="page-container">
       <ActivityCard fetchActivity={loadActivity} category={category} />
       <div className="border"></div>
-      {activity && <Activity activity={activity} />}{" "}
+      <div className="activity-container">
+        {activity ? (
+          <Activity activity={activity} />
+        ) : (
+          <h2>Hi ha masses peticions</h2>
+        )}
+      </div>
     </div>
   );
 };

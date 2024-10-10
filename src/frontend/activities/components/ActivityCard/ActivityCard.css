@@ -1,4 +1,4 @@
-.activityCard-mainContainer {
+.activityCard {
   position: relative;
   margin-bottom: 180px;
 }
@@ -31,7 +31,7 @@
   font-size: 0.9rem;
 }
 
-.activityCard-image {
+.activityCard__image {
   position: relative;
   z-index: 1;
 }
