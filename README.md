@@ -30,4 +30,4 @@ Podeu accedir a una demo de l'aplicació des del següent enllaç:
 
 ## Instal·lació i execució del projecte
 
-Per executar aquest projecte localment, clona el repositori, instal·la les dependencies, buildeja el servidor del back amb `npm run build-back` i posa'l a escoltar amb `npm run back-start`. Pots provar el projecte o bé localmente amb el comand `npm run dev` o `npm run build` + `npm run preview`, o a l'enllaç de netlify.
+Pode accedir al projecte mitjançant l'enllaç de la demo o executar el projecte localment; clona el repositori, instal·la les dependencies, buildeja el servidor del back amb `npm run build-back` i posa'l a escoltar amb `npm run back-start`. Pots provar el projecte o bé amb el comand `npm run dev` o amb els comands `npm run build` + `npm run preview`.

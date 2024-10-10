@@ -15,9 +15,9 @@ const ActivityCard = ({
     }
   };
   return (
-    <div className="activityCard-mainContainer">
+    <div className="activityCard">
       <img
-        className="activityCard-image"
+        className="activityCard__image"
         src="/oyster.webp"
         alt="imatge d'una ostra de dibuixos feliç"
         width={200}
